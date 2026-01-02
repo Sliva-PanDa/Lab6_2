@@ -14,19 +14,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: List files in the repository
-      run: ls -R
-
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore PublicationPortal.sln
+      run: dotnet restore ./PublicationPortal/PublicationPortal.sln
 
     - name: Build
-      run: dotnet build PublicationPortal.sln --no-restore --configuration Release
+      run: dotnet build ./PublicationPortal/PublicationPortal.sln --no-restore --configuration Release
 
     - name: Test
-      run: dotnet test PublicationPortal.sln --no-build --verbosity normal
+      run: dotnet test ./PublicationPortal/PublicationPortal.sln --no-build --verbosity normal
