@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("PublicationPortal")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("PublicationPortal.Tests")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e0c8fb8584284993fad82334f028bf260ecb3e4")]
-[assembly: System.Reflection.AssemblyProductAttribute("PublicationPortal")]
-[assembly: System.Reflection.AssemblyTitleAttribute("PublicationPortal")]
+[assembly: System.Reflection.AssemblyProductAttribute("PublicationPortal.Tests")]
+[assembly: System.Reflection.AssemblyTitleAttribute("PublicationPortal.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
