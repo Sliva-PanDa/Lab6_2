@@ -38,5 +38,5 @@
 
 
 
-\[!\[.NET Build and Test](https://github.com/Sliva-PanDa/Lab6\_2/actions/workflows/build.yml/badge.svg)](https://github.com/Sliva-PanDa/Lab6\_2/actions)
+[!\[.NET Build and Test](https://github.com/Sliva-PanDa/Lab6\_2/actions/workflows/build.yml/badge.svg)](https://github.com/Sliva-PanDa/Lab6\_2/actions)
 
