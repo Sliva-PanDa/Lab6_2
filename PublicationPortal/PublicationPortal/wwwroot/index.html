@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портал научных публикаций</title>
+    <style>
+        /* --- Общие стили --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+            button:hover {
+                background-color: #2980b9;
+            }
+
+            button:disabled {
+                background-color: #bdc3c7;
+                cursor: not-allowed;
+            }
+
+            button.delete-btn {
+                background-color: #e74c3c;
+            }
+
+                button.delete-btn:hover {
+                    background-color: #c0392b;
+                }
+
+            button.edit-btn {
+                background-color: #f39c12;
+                margin-right: 5px;
+            }
+
+                button.edit-btn:hover {
+                    background-color: #e67e22;
+                }
+
+        .form-container {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .message {
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 5px;
+            display: none;
+        }
+
+            .message.success {
+                background-color: #d4edda;
+                color: #155724;
+                border: 1px solid #c3e6cb;
+            }
+
+            .message.error {
+                background-color: #f8d7da;
+                color: #721c24;
+                border: 1px solid #f5c6cb;
+            }
+        /* --- Стили таблицы --- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e8f4f8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Портал научных публикаций факультета</h1>
+        <div id="messageBox" class="message"></div>
+        <button id="showFormBtn">Добавить публикацию</button>
+
+        <!-- Форма для добавления/редактирования -->
+        <div id="publicationFormContainer" class="form-container">
+            <h2 id="formTitle">Добавить новую публикацию</h2>
+            <form id="publicationForm">
+                <input type="hidden" id="publicationId">
+                <label for="title">Название:</label>
+                <input type="text" id="title" required>
+                <label for="type">Тип:</label>
+                <select id="type" required>
+                    <option value="Статья">Статья</option>
+                    <option value="Тезисы">Тезисы</option>
+                    <option value="Монография">Монография</option>
+                </select>
+                <label for="year">Год:</label>
+                <input type="number" id="year" required>
+                <label for="doiLink">DOI/Ссылка:</label>
+                <input type="text" id="doiLink" required>
+                <label for="journal">Журнал/Конференция:</label>
+                <select id="journal" required></select>
+                <label for="authors">Авторы (удерживайте Ctrl для выбора нескольких):</label>
+                <select id="authors" multiple required size="5"></select>
+                <button type="submit">Сохранить</button>
+                <button type="button" id="cancelBtn">Отмена</button>
+            </form>
+        </div>
+
+        <!-- Таблица для отображения публикаций -->
+        <h2>Список публикаций</h2>
+        <table id="publicationsTable">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Тип</th>
+                    <th>Год</th>
+                    <th>Журнал</th>
+                    <th>Авторы</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Данные будут загружены сюда с помощью JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Блок пагинации -->
+        <div id="paginationControls" style="margin-top: 20px; text-align: center;">
+            <button id="prevPageBtn" disabled>&laquo; Назад</button>
+            <span id="pageInfo" style="margin: 0 15px; font-weight: bold;"></span>
+            <button id="nextPageBtn" disabled>Вперед &raquo;</button>
+        </div>
+    </div> <!-- конец .container -->
+
+    <script>
+        // --- Глобальные переменные и константы ---
+        const API_BASE_URL = '';
+        const publicationsApi = `/api/publications`;
+        const journalsApi = `/api/journals`;
+        const teachersApi = `/api/teachers`;
+
+        // Переменные для состояния пагинации
+        let currentPage = 1;
+        const pageSize = 10;
+        let totalPublications = 0;
+
+        // Элементы DOM
+        const tableBody = document.querySelector('#publicationsTable tbody');
+        const formContainer = document.getElementById('publicationFormContainer');
+        const form = document.getElementById('publicationForm');
+        const formTitle = document.getElementById('formTitle');
+        const showFormBtn = document.getElementById('showFormBtn');
+        const cancelBtn = document.getElementById('cancelBtn');
+        const messageBox = document.getElementById('messageBox');
+        const prevPageBtn = document.getElementById('prevPageBtn');
+        const nextPageBtn = document.getElementById('nextPageBtn');
+        const pageInfo = document.getElementById('pageInfo');
+
+        // --- Функции ---
+
+        function showMessage(text, isError = false) {
+            messageBox.textContent = text;
+            messageBox.className = `message ${isError ? 'error' : 'success'}`;
+            messageBox.style.display = 'block';
+            setTimeout(() => { messageBox.style.display = 'none'; }, 4000);
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(totalPublications / pageSize);
+            pageInfo.textContent = `Страница ${currentPage} из ${totalPages}`;
+            prevPageBtn.disabled = currentPage === 1;
+            nextPageBtn.disabled = currentPage === totalPages || totalPages === 0;
+        }
+
+        async function loadPublications(page = 1) {
+            currentPage = page;
+            try {
+                const response = await fetch(`${publicationsApi}?pageNumber=${currentPage}&pageSize=${pageSize}`);
+                if (!response.ok) throw new Error('Ошибка загрузки публикаций');
+
+                const result = await response.json();
+                const publications = result.items;
+                totalPublications = result.totalCount;
+
+                tableBody.innerHTML = '';
+                publications.forEach(pub => {
+                    const row = tableBody.insertRow();
+                    row.innerHTML = `
+                            <td>${pub.title}</td>
+                            <td>${pub.type}</td>
+                            <td>${pub.year}</td>
+                            <td>${pub.journalName}</td>
+                            <td>${pub.authorNames.join(', ')}</td>
+                            <td>
+                                <button class="edit-btn" onclick="editPublication(${pub.publicationId})">Изменить</button>
+                                <button class="delete-btn" onclick="deletePublication(${pub.publicationId})">Удалить</button>
+                            </td>
+                        `;
+                });
+                renderPagination();
+            } catch (error) {
+                showMessage(error.message, true);
+            }
+        }
+
+        async function loadSelectOptions() {
+            try {
+                const journalSelect = document.getElementById('journal');
+                if (journalSelect.options.length > 0 && journalSelect.options[0].value) return; // Загружаем только один раз
+                journalSelect.innerHTML = ''; // Очищаем на всякий случай
+                const response = await fetch(journalsApi);
+                if (!response.ok) throw new Error('Ошибка загрузки журналов');
+                const journals = await response.json();
+                journals.forEach(j => journalSelect.add(new Option(j.name, j.journalId)));
+            } catch (error) { showMessage(error.message, true); }
+
+            try {
+                const authorsSelect = document.getElementById('authors');
+                if (authorsSelect.options.length > 0) return; // Загружаем только один раз
+                const response = await fetch(teachersApi);
+                if (!response.ok) throw new Error('Ошибка загрузки преподавателей');
+                const teachers = await response.json();
+                teachers.forEach(t => authorsSelect.add(new Option(t.fullName, t.teacherId)));
+            } catch (error) { showMessage(error.message, true); }
+        }
+
+        async function deletePublication(id) {
+            if (!confirm('Вы уверены, что хотите удалить эту публикацию?')) return;
+            try {
+                const response = await fetch(`${publicationsApi}/${id}`, { method: 'DELETE' });
+                if (!response.ok) throw new Error('Ошибка при удалении');
+                showMessage('Публикация успешно удалена!');
+                const totalPagesAfterDelete = Math.ceil((totalPublications - 1) / pageSize);
+                if (currentPage > totalPagesAfterDelete && currentPage > 1) {
+                    currentPage = totalPagesAfterDelete;
+                }
+                loadPublications(currentPage);
+            } catch (error) { showMessage(error.message, true); }
+        }
+
+        async function editPublication(id) {
+            try {
+                const response = await fetch(`${publicationsApi}/${id}`);
+                if (!response.ok) throw new Error('Ошибка загрузки данных для редактирования');
+                const pub = await response.json();
+
+                formTitle.textContent = 'Редактировать публикацию';
+                document.getElementById('publicationId').value = pub.publicationId;
+                document.getElementById('title').value = pub.title;
+                document.getElementById('type').value = pub.type;
+                document.getElementById('year').value = pub.year;
+                document.getElementById('doiLink').value = pub.doiLink;
+                document.getElementById('journal').value = pub.journalId;
+
+                const authorsSelect = document.getElementById('authors');
+                Array.from(authorsSelect.options).forEach(opt => opt.selected = false);
+                if (pub.authorTeacherIds) {
+                    pub.authorTeacherIds.forEach(authorId => {
+                        const option = authorsSelect.querySelector(`option[value="${authorId}"]`);
+                        if (option) option.selected = true;
+                    });
+                }
+                formContainer.style.display = 'block';
+            } catch (error) { showMessage(error.message, true); }
+        }
+
+        // --- Обработчики событий ---
+
+        showFormBtn.addEventListener('click', () => {
+            form.reset();
+            formTitle.textContent = 'Добавить новую публикацию';
+            document.getElementById('publicationId').value = '';
+            formContainer.style.display = 'block';
+        });
+
+        cancelBtn.addEventListener('click', () => { formContainer.style.display = 'none'; });
+
+        prevPageBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                loadPublications(currentPage - 1);
+            }
+        });
+
+        nextPageBtn.addEventListener('click', () => {
+            const totalPages = Math.ceil(totalPublications / pageSize);
+            if (currentPage < totalPages) {
+                loadPublications(currentPage + 1);
+            }
+        });
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const id = document.getElementById('publicationId').value;
+            const selectedAuthorIds = Array.from(document.getElementById('authors').selectedOptions).map(opt => parseInt(opt.value));
+            const publicationData = { title: document.getElementById('title').value, type: document.getElementById('type').value, year: parseInt(document.getElementById('year').value), doiLink: document.getElementById('doiLink').value, journalId: parseInt(document.getElementById('journal').value), authorTeacherIds: selectedAuthorIds };
+
+            const isUpdating = id;
+            const url = isUpdating ? `${publicationsApi}/${id}` : publicationsApi;
+            const method = isUpdating ? 'PUT' : 'POST';
+
+            try {
+                const response = await fetch(url, { method: method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(publicationData) });
+                if (!response.ok) throw new Error(await response.text() || 'Ошибка сохранения');
+
+                showMessage(`Публикация успешно ${isUpdating ? 'обновлена' : 'создана'}!`);
+                formContainer.style.display = 'none';
+                loadPublications(isUpdating ? currentPage : 1);
+            } catch (error) { showMessage(error.message, true); }
+        });
+
+        // --- Запуск ---
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPublications(1);
+            loadSelectOptions();
+        });
+    </script>
+</body>
+</html>

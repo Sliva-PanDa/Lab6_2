@@ -1,0 +1,355 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\controllers\\publicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\controllers\\publicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\controllers\\journalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\controllers\\journalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\dtos\\publicationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\dtos\\publicationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\dtos\\paginatedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\dtos\\paginatedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916DC749-DADC-477C-B02A-DEE0846275A0}|PublicationPortal.Tests\\PublicationPortal.Tests.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal.tests\\publicationscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916DC749-DADC-477C-B02A-DEE0846275A0}|PublicationPortal.Tests\\PublicationPortal.Tests.csproj|solutionrelative:publicationportal.tests\\publicationscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\models\\publicationauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\models\\publicationauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\models\\publication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\models\\publication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\models\\journal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\models\\journal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\dtos\\publicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\dtos\\publicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|d:\\\u0432\u0441\u0451\u0432\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0431\u0434\\lab6_2\\publicationportal\\publicationportal\\publicationportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{54014A74-E2F3-45DC-BF96-2E48B3C0A738}|PublicationPortal\\PublicationPortal.csproj|solutionrelative:publicationportal\\publicationportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Migrations\\20260101222156_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PublicationPortal\\Migrations\\20260101222156_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Program.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Program.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Program.cs",
+              "RelativeToolTip": "PublicationPortal\\Program.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAiwGgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T22:09:08.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PublicationsControllerTests.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal.Tests\\PublicationsControllerTests.cs",
+              "RelativeDocumentMoniker": "PublicationPortal.Tests\\PublicationsControllerTests.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal.Tests\\PublicationsControllerTests.cs",
+              "RelativeToolTip": "PublicationPortal.Tests\\PublicationsControllerTests.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAiwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T21:41:30.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaginatedResult.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Dtos\\PaginatedResult.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Dtos\\PaginatedResult.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Dtos\\PaginatedResult.cs",
+              "RelativeToolTip": "PublicationPortal\\Dtos\\PaginatedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T08:47:52.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PublicationCreateDto.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Dtos\\PublicationCreateDto.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Dtos\\PublicationCreateDto.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Dtos\\PublicationCreateDto.cs",
+              "RelativeToolTip": "PublicationPortal\\Dtos\\PublicationCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T22:49:21.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JournalsController.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Controllers\\JournalsController.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Controllers\\JournalsController.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Controllers\\JournalsController.cs",
+              "RelativeToolTip": "PublicationPortal\\Controllers\\JournalsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T23:11:02.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PublicationsController.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Controllers\\PublicationsController.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Controllers\\PublicationsController.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Controllers\\PublicationsController.cs",
+              "RelativeToolTip": "PublicationPortal\\Controllers\\PublicationsController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAswGcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T22:44:11.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "PublicationPortal\\wwwroot\\index.html",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\wwwroot\\index.html",
+              "RelativeToolTip": "PublicationPortal\\wwwroot\\index.html",
+              "ViewState": "AgIAAE0BAAAAAAAAAAAmwFgBAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-01-01T23:23:28.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeachersController.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Controllers\\TeachersController.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Controllers\\TeachersController.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Controllers\\TeachersController.cs",
+              "RelativeToolTip": "PublicationPortal\\Controllers\\TeachersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T23:11:33.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "PublicationPortal\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T22:02:00.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\appsettings.json",
+              "RelativeDocumentMoniker": "PublicationPortal\\appsettings.json",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\appsettings.json",
+              "RelativeToolTip": "PublicationPortal\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-01T22:03:56.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PublicationAuthor.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Models\\PublicationAuthor.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Models\\PublicationAuthor.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Models\\PublicationAuthor.cs",
+              "RelativeToolTip": "PublicationPortal\\Models\\PublicationAuthor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T22:00:21.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Models\\Teacher.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Models\\Teacher.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Models\\Teacher.cs",
+              "RelativeToolTip": "PublicationPortal\\Models\\Teacher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T21:57:35.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Publication.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Models\\Publication.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Models\\Publication.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Models\\Publication.cs",
+              "RelativeToolTip": "PublicationPortal\\Models\\Publication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T21:59:58.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Journal.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Models\\Journal.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Models\\Journal.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Models\\Journal.cs",
+              "RelativeToolTip": "PublicationPortal\\Models\\Journal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T21:58:19.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Models\\Department.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Models\\Department.cs",
+              "RelativeToolTip": "PublicationPortal\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T21:56:38.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PublicationDto.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Dtos\\PublicationDto.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Dtos\\PublicationDto.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Dtos\\PublicationDto.cs",
+              "RelativeToolTip": "PublicationPortal\\Dtos\\PublicationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T22:47:23.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PublicationPortal\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PublicationPortal\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-01T23:24:31.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PublicationPortal",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\PublicationPortal.csproj",
+              "RelativeDocumentMoniker": "PublicationPortal\\PublicationPortal.csproj",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\PublicationPortal.csproj",
+              "RelativeToolTip": "PublicationPortal\\PublicationPortal.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-01T21:46:04.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20260101222156_InitialCreate.cs",
+              "DocumentMoniker": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Migrations\\20260101222156_InitialCreate.cs",
+              "RelativeDocumentMoniker": "PublicationPortal\\Migrations\\20260101222156_InitialCreate.cs",
+              "ToolTip": "D:\\\u0412\u0441\u0451\u0412\u0441\u0451\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B\\\u0411\u0414\\Lab6_2\\PublicationPortal\\PublicationPortal\\Migrations\\20260101222156_InitialCreate.cs",
+              "RelativeToolTip": "PublicationPortal\\Migrations\\20260101222156_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T22:21:56.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

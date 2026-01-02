@@ -1,0 +1,6 @@
+@PublicationPortal_HostAddress = http://localhost:5152
+
+GET {{PublicationPortal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
