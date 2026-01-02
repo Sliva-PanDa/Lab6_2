@@ -17,13 +17,13 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x' 
+        dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./PublicationPortal.sln
 
     - name: Build
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build ./PublicationPortal.sln --no-restore --configuration Release
 
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./PublicationPortal.sln --no-build --verbosity normal
